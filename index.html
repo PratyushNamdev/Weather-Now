@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imgs/map1.png" type="image/x-icon">
+</head>
+<body  >
+<header>
+    <h1>Weather App</h1>
+</header>
+     <div class="tab-container">
+        <button id="user-weather-btn" class="tab">Your Weather</button>
+        <button id="search-weather-btn" class="tab">Search Weather</button>
+     </div>
+ 
+    <!-- grant location access conrainer -->
+     <div class="get-location-container hide">
+        <div class="map2"><img src="/imgs/map2.png" alt="location"></div>
+        <h2>Grant Location Access</h2>
+        <p class="get-location-description">Allow location access to see your weather</p>
+        <button id="allow-location">Grant Access</button>
+    </div>
+    <!-- ........................... -->
+    <!-- search box -->
+    <div class="search-container   hide">
+        <div class="search-box hide">
+       
+              <input
+              class="city-search-box"
+              id="search-value"
+                  type="text"
+                  placeholder="Search for city...."
+                />
+                <div class="search-btn-div"><button id="search-btn"><img class="search-logo" src="/imgs/search.png" alt=""></button></div>
+        </div>
+    </div>
+<!-- ............................. -->
+    <!-- user location weather preview -->
+    <section class="weather-container hide">
+
+       <div style="text-align: center; font-size: 1.5rem;">
+        <h1 class="city" >Inde</h1>
+       </div>
+        <div class="user-location-box">
+            <div class="temp-centre">
+                <div class="weather-img-div">
+                    <img class="weather-img" width="60px">
+                </div>
+                <div class="weather-info">
+                    <h1 class="temperature">32</h1>
+                    <div class="temp-centre-child">
+                        <h2>°C</h2>
+                        <h4 class="weather-type">Rainy</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="temprature-cards">
+                <div class="temp-card-row">
+                    <div class="temp-card-row-1">Max Temperature :20 c</div>
+                    <div class="temp-card-row-2">Feels Like :20 c</div>
+                    <div class="temp-card-row-3">Min Temperature :20 c</div>
+            
+                </div>
+            </div>
+        </div>
+        <div class="weather-cards">
+            <div class="weather-card-row wind-speed">
+                <img src="/imgs/wind.png" alt="wind" width="80px">
+                <p class="cd1">WIND-SPEED  <br> 5 m/s</p>
+            </div>
+            <div class="weather-card-row humidity">
+                <img src="/imgs/humidity.png" alt="humidity" width="80px">
+                <p class="cd2">HUMIDITY <br> 40%</p>
+            </div>
+            <div class="weather-card-row clouds">
+                <img src="/imgs/cloud.png" alt="wind" width="80px">
+                <p class="cd3">CLOUDS <br> 80%</p>
+            </div>
+            <div class="weather-card-row clouds">
+                <img src="/imgs/air.png" alt="wind" width="80px">
+                <p class="cd4">AIR-PRESSURE <br> 80hPa</p>
+            </div>
+        </div>
+    </section>
+    <!-- ...................... -->
+
+   <!-- loading img -->
+    <div class="loading hide">
+        <img src="/imgs/loading.gif" alt="" srcset="" width="70px">
+    </div>
+<!-- ...................... -->
+
+<div class="nonet hide">
+    <div class="network-img-div"><img src="/imgs/nonet.jpg" alt="no network"></div>
+    <h2>You are offline</h2>
+    <h4>Check your internet connection...</h4>
+</div>
+ 
+<div class="citynotfound hide">
+    <div class="network-img-div"><img src="/imgs/citynotfound.jpg" alt="no network"></div>
+    <h2>City Not Found</h2>
+    <h4>Check the spelling... <br>
+        We will provide city name suggestions soon....
+    </h4>
+</div>
+ 
+
+<script src="/working.js"></script>
+</body>
+</html>
